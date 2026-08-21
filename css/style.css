@@ -1,11 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* reset file */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    /* colors */
+    
+    /* font size */
+    --font-size-xs: 12px;
+    /*(Extra Small)*/
+    --font-size-sm: 14px;
+    /*(Small)*/
+    --font-size-base: 16px;
+    /*(Base/Medium)*/
+    --font-size-lg: 20px;
+    /*(Large)*/
+    --font-size-xl: 32px;
+    /*(Extra Large)*/
+    --font-size-2xl: 40px;
+    /*(Double Extra Larde)*/
+}
+
+html,
 body {
+    font-size: 62.5%;
     font-family: roboto;
+}
+
+/* default tag style */
+
+h1 {
+    font-size: var(--font-size-2xl);
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+}
+
+h3 {
+    font-size: var(--font-size-lg);
+}
+
+p,
+li {
+    font-size: var(--font-size-base);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+input {
+    border: none;
+    outline: none;
 }
