@@ -103,6 +103,52 @@ ul {
     }
 }
 
+section {
+    padding: 1rem 2rem;
+
+    .img-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        iframe {
+            width: 90%;
+            height: 100vh;
+        }
+
+        .img-mini {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 102.5%;
+
+            img {
+                width: 18rem;
+                height: 8rem;
+                cursor: pointer;
+                padding: 1rem 0.2rem;
+                transition: 0.2s ease;
+                opacity: 80%;
+
+                &:hover {
+                    background-color: #dcdcdc97;
+                }
+
+                &.active {
+                    border-color: #007bff;
+                    background-color: #dcdcdc97;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+                }
+
+            }
+
+        }
+    }
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
