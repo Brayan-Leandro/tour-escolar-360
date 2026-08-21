@@ -10,7 +10,11 @@
 
 :root {
     /* colors */
-    
+    --gray: #C0C0C0;
+    --black-80: #000000e0;
+    --gray-80:#999898cc;
+    --white-90: #ffffffe0;
+
     /* font size */
     --font-size-xs: 12px;
     /*(Extra Small)*/
@@ -60,4 +64,39 @@ button {
 input {
     border: none;
     outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* index page */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    background: var(--gray);
+    color: var(--black-80);
+
+    .nav-bar {
+        display: flex;
+
+        .nav-bar__list {
+            display: flex;
+            gap: 2rem;
+            font-weight: 500;
+
+            li {
+                padding: 1rem 2rem;
+                cursor: pointer;
+
+                &:hover {
+                    background: var(--gray-80);
+                    color: var(--white-90);
+                    border-radius: 1rem;
+                }
+            }
+        }
+    }
 }
